@@ -1,29 +1,82 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: #f4f6f8;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
 }
 
-.navbar {
-    background: #1e293b;
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-card {
+    background: white;
+    color: black;
+    padding: 30px;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #2563eb;
+    border: none;
     color: white;
-    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.tabs {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.dashboard {
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    background: #0f172a;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
 }
 
 .card {
     background: white;
-    margin: 20px;
+    color: black;
     padding: 20px;
+    margin: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.btn {
-    background: #2563eb;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
 }

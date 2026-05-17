@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+<div class="sidebar">
+    <h3>Admin Panel</h3>
+    <a href="#">Students</a>
+    <a href="#">Courses</a>
+    <a href="#">Reports</a>
+    <a href="#" onclick="logout()">Logout</a>
+</div>
+
+<div class="main">
+
+    <h2>Admin Dashboard</h2>
+
+    <div class="card">
+        <h3>Total Students</h3>
+        <h1>1200</h1>
+    </div>
+
+    <div class="card">
+        <h3>Total Courses</h3>
+        <h1>45</h1>
+    </div>
+
+</div>
+
+</div>
+
+<script>
+function logout(){
+    localStorage.removeItem("currentUser");
+    window.location.href = "../index.html";
+}
+</script>
+
+</body>
+</html>

@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css/styles.css">
+    <title>UMS Login</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<div class="card" style="width:300px;margin:100px auto;">
-    <h2>Login</h2>
-    <input id="email" placeholder="email"><br><br>
-    <input id="pass" type="password" placeholder="password"><br><br>
-    <button class="btn" onclick="login()">Login</button>
+<div class="auth-container">
+
+    <div class="auth-card">
+
+        <h2>University Management System</h2>
+
+        <div class="tabs">
+            <button onclick="showLogin()">Login</button>
+            <button onclick="showSignup()">Signup</button>
+        </div>
+
+        <!-- LOGIN -->
+        <div id="loginBox">
+            <input id="loginEmail" placeholder="Email">
+            <input id="loginPass" type="password" placeholder="Password">
+
+            <select id="loginRole">
+                <option value="student">Student</option>
+                <option value="admin">Admin</option>
+                <option value="faculty">Faculty</option>
+            </select>
+
+            <button onclick="login()">Login</button>
+        </div>
+
+        <!-- SIGNUP -->
+        <div id="signupBox" style="display:none;">
+            <input id="signupName" placeholder="Full Name">
+            <input id="signupEmail" placeholder="Email">
+            <input id="signupPass" type="password" placeholder="Password">
+
+            <select id="signupRole">
+                <option value="student">Student</option>
+                <option value="faculty">Faculty</option>
+            </select>
+
+            <button onclick="signup()">Create Account</button>
+        </div>
+
+    </div>
 </div>
 
 <script src="js/app.js"></script>
